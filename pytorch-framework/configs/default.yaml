@@ -1,0 +1,15 @@
+batch_size: 64
+epochs: 10
+learning_rate: 0.001
+optimizer: adam
+loss_fn: cross_entropy
+
+checkpoint_dir: checkpoints
+log_dir: logs
+
+early_stopping_patience: 5
+early_stopping_min_delta: 0.001
+
+use_wandb: false
+project_name: pytorch-framework
+experiment_name: default

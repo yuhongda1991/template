@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytorch-framework"
+version = "0.1.0"
+description = "A modular PyTorch training framework"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scikit-learn>=1.2",
+    "tqdm>=4.65",
+    "pyyaml>=6.0",
+    "wandb>=0.15"
+]
+
+[project.scripts]
+train = "scripts.train:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
